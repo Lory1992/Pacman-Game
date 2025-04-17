@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man con Mostro</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34; /* Cambiato il colore di sfondo qui */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        canvas {
+            border: 2px solid yellow;
+            background-color: black;
+        }
+
+        #startButtonContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #startButton {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #87CEEB;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="startButtonContainer">
+        <button id="startButton">Inizia</button>
+    </div>
+    <canvas id="pacmanCanvas"></canvas>
+
+    <script src="pacman.js"></script>
+</body>
+</html>
